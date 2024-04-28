@@ -6,7 +6,10 @@ async function fetchRandomNews()
 {
     try{
 
-        const apiUrl = https://newsapi.org/v2/top-headlines?country=us&pageSize=40&apikey=${apiKey};
+        const apiUrl = 'https://newsapi.org/v2/top-headlines?country=us&pageSize=40&apikey=' + apiKey;
+
+       
+        // const apiUrl = https://newsapi.org/v2/top-headlines?country=us&pageSize=40&apikey=${apiKey};
         
         const response = await fetch(apiUrl);
         const data = await response.json();
